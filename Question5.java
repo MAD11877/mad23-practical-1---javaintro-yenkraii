@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Question5
 {
@@ -27,6 +29,34 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+
+    Map<Integer, Integer> numMap = new HashMap<>();
+    int numOfIntegers = 5;
+
+    // Prompt the user to enter the integers
+        for (int i = 0; i < numOfIntegers; i++) {
+            System.out.print("Enter integer #" + (i + 1) + ": ");
+            int num = in.nextInt();
+            // Update the HashMap with the occurrence of the integer
+            if (numMap.containsKey(num)) {
+                numMap.put(num, numMap.get(num) + 1);
+            } else {
+                numMap.put(num, 1);
+            }
+        }
+
+        // Find the mode (highest occurrence)
+        int mode = 0;
+        int maxCount = 0;
+        for (Map.Entry<Integer, Integer> entry : numMap.entrySet()) {
+            int num = entry.getKey();
+            int count = entry.getValue();
+            if (count > maxCount) {
+                mode = num;
+                maxCount = count;
+            }
+        }
+        // Print the mode
+        System.out.println("The mode is: " + mode);
   }
 }
