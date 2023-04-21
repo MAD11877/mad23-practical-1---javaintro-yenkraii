@@ -35,7 +35,7 @@ public class Question5
 
     // Prompt the user to enter the integers
         for (int i = 0; i < numOfIntegers; i++) {
-            System.out.print("Enter integer #" + (i + 1) + ": ");
+            System.out.print(">");
             int num = in.nextInt();
             // Update the HashMap with the occurrence of the integer
             if (numMap.containsKey(num)) {

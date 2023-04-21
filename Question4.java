@@ -18,7 +18,7 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("how wide should the triangle be? ");
+    //System.out.print("how wide should the triangle be? ");
     int b = in.nextInt();
 
     for (int i = b ; i > 0  ; i --){

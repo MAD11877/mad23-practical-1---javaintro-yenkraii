@@ -11,7 +11,7 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("give a number: ");
+    //System.out.print("give a number: ");
     Integer value = in.nextInt();
     Integer v = value * value;
 
