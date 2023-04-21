@@ -11,12 +11,13 @@ public class Question2
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("your height? (in m)"); 
+    //System.out.print("your height? (in m)"); 
     double height = in.nextDouble();
-    System.out.print("your weight? (in kg)");
+    //System.out.print("your weight? (in kg)");
     double weight = in.nextDouble();
     double bmi = weight / (height * height);
 
-    System.out.printf("BMI: %.1f",bmi);
+    //System.out.printf("BMI: %.1f",bmi);
+    System.out.print(bmi);
   }
 }
