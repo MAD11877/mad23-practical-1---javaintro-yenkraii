@@ -51,9 +51,12 @@ public class Question5
         for (Map.Entry<Integer, Integer> entry : numMap.entrySet()) {
             int num = entry.getKey();
             int count = entry.getValue();
+            System.out.printf("count: %s",count);
+            System.out.printf("num: %s",num);
             if (count > maxCount) {
                 mode = num;
                 maxCount = count;
+                // something is happening
             }
         }
         // Print the mode
