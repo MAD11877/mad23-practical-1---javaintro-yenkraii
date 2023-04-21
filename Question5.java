@@ -31,7 +31,7 @@ public class Question5
     Scanner in = new Scanner(System.in);
 
     Map<Integer, Integer> numMap = new HashMap<>();
-    int numOfIntegers = 5;
+    int numOfIntegers = in.nextInt();
 
     // Prompt the user to enter the integers
         for (int i = 0; i < numOfIntegers; i++) {
@@ -51,8 +51,8 @@ public class Question5
         for (Map.Entry<Integer, Integer> entry : numMap.entrySet()) {
             int num = entry.getKey();
             int count = entry.getValue();
-            System.out.printf("count: %s",count);
-            System.out.printf("num: %s",num);
+            //System.out.printf("count: %s",count);
+            //System.out.printf("num: %s",num);
             if (count > maxCount) {
                 mode = num;
                 maxCount = count;
